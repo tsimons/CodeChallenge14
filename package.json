@@ -2,10 +2,12 @@
   "name": "CodeChallenge14",
   "version": "0.0.0",
   "description": "Code Challenge for the Jan 14 Dev Conference",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,8 @@
   "gitHead": "54711fe2c21f0b68f4344e20017652aa1ad27ccb",
   "readmeFilename": "README.md",
   "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-jasmine": "~0.5.2"
   }
 }
