@@ -8,4 +8,23 @@
 
 
 var countDown = function (num) {
+    if (num === 0) {
+        return '' + 0;
+    }
+    
+    if (num < 0) {
+        return 'Error: Please use a positive number';
+    }
+    
+    var output = '';
+    
+    if (num % 3 === 0) {
+        output += 'foo';
+    }
+    
+    if (num % 5 === 0) {
+        output += 'bar';
+    }
+    
+    return '' + (output || num) + ' ' + countDown(num - 1);
 };
